@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truyện Mới Cập Nhật</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#121212;
+    color:#fff;
+}
+header {
+    background:#1e1e1e;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+header h1 {
+    margin:0;
+    font-size:18px;
+    color:#ff9800;
+}
+/* Tìm kiếm */
+.search-box {
+    flex:1;
+    margin-left:12px;
+}
+.search-box input {
+    width:100%;
+    padding:6px 10px;
+    border-radius:4px;
+    border:none;
+}
+/* Grid truyện */
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    gap:12px;
+    padding:12px;
+}
+.story-card {
+    background:#1c1c1c;
+    border-radius:8px;
+    overflow:hidden;
+    cursor:pointer;
+    transition: transform .2s;
+    text-align:center;
+}
+.story-card:hover {
+    transform: scale(1.03);
+}
+.story-card img {
+    width:100%;
+    display:block;
+    border-bottom:1px solid #222;
+}
+.story-title {
+    font-size:14px;
+    margin:6px 0 2px 0;
+    color:#ff9800;
+}
+.story-chap {
+    font-size:12px;
+    opacity:0.8;
+    margin:4px 0 6px 0;
+    display:block;
+    text-decoration:none;
+    color:#fff;
+}
+.story-chap:hover {
+    text-decoration:underline;
+}
+.story-list {
+    text-align:left;
+    font-size:12px;
+    margin:0 8px 8px 8px;
+}
+.story-list a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    margin:2px 0;
+}
+.story-list a:hover {
+    text-decoration:underline;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>DichTruyenDrop</h1>
+    <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm truyện...">
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Truyện 1 -->
+    <div class="story-card">
+        <a href="https://dichtruyendrop.github.io/After-Transformation-Mine-And-Her-Wild-Fantasy/">
+            <img src="cover.jpeg" alt="Truyện 1">
+            <div class="story-title">After Transformation, Mine And Her Wild Fantasy</div>
+        </a>
+        <a href="https://dichtruyendrop.github.io/Chapter-87/" class="story-chap">Chương 87</a>
+        <div class="story-list">
+            <a href="https://dichtruyendrop.github.io/Chapter86/">Chương 86</a>
+            <a href="https://dichtruyendrop.github.io/Chapter85/">Chương 85</a>
+            <a href="https://dichtruyendrop.github.io/truyen/">Chương 84</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
