@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Truyện Mới Cập Nhật</title>
+
 <style>
 body {
     margin:0;
@@ -11,6 +12,8 @@ body {
     background:#121212;
     color:#fff;
 }
+
+/* HEADER */
 header {
     background:#1e1e1e;
     padding:12px;
@@ -18,77 +21,91 @@ header {
     align-items:center;
     justify-content: space-between;
 }
+
 header h1 {
     margin:0;
     font-size:18px;
     color:#ff9800;
 }
-/* Tìm kiếm */
+
+/* SEARCH */
 .search-box {
     flex:1;
     margin-left:12px;
 }
+
 .search-box input {
     width:100%;
     padding:6px 10px;
     border-radius:4px;
     border:none;
 }
-/* Grid truyện */
-.container {
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+
+/* ===== 1 HÀNG – 2 TRUYỆN (LUÔN NGANG) ===== */
+.story-row{
+    display:flex;
     gap:12px;
     padding:12px;
 }
-.story-card {
+
+.story-card{
+    width:50%;
     background:#1c1c1c;
-    border-radius:8px;
+    border-radius:10px;
     overflow:hidden;
-    cursor:pointer;
-    transition: transform .2s;
     text-align:center;
+    transition: transform .2s;
 }
-.story-card:hover {
-    transform: scale(1.03);
+
+.story-card:hover{
+    transform:scale(1.03);
 }
-.story-card img {
+
+.story-card img{
     width:100%;
     display:block;
     border-bottom:1px solid #222;
 }
-.story-title {
+
+/* TEXT */
+.story-title{
     font-size:14px;
-    margin:6px 0 2px 0;
+    margin:6px 0 2px;
     color:#ff9800;
 }
-.story-chap {
-    font-size:12px;
-    opacity:0.8;
-    margin:4px 0 6px 0;
+
+.story-chap{
     display:block;
-    text-decoration:none;
+    font-size:12px;
+    margin:4px 0 6px;
     color:#fff;
+    text-decoration:none;
+    opacity:.85;
 }
-.story-chap:hover {
+
+.story-chap:hover{
     text-decoration:underline;
 }
-.story-list {
+
+.story-list{
     text-align:left;
     font-size:12px;
-    margin:0 8px 8px 8px;
+    margin:0 8px 8px;
 }
-.story-list a {
+
+.story-list a{
     display:block;
     color:#fff;
     text-decoration:none;
     margin:2px 0;
 }
-.story-list a:hover {
+
+.story-list a:hover{
     text-decoration:underline;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -98,21 +115,46 @@ header h1 {
     </div>
 </header>
 
-<div class="container">
+<!-- ===== TRUYỆN NGANG TRÁI – PHẢI ===== -->
+<div class="story-row">
 
-    <!-- Truyện 1 -->
+    <!-- TRUYỆN TRÁI -->
     <div class="story-card">
         <a href="https://dichtruyendrop.github.io/After-Transformation-Mine-And-Her-Wild-Fantasy/">
-            <img src="cover.jpeg" alt="Truyện 1">
-            <div class="story-title">After Transformation Mine And Her Wild Fantasy</div>
+            <img src="cover.jpeg">
+            <div class="story-title">
+                After Transformation, Mine And Her Wild Fantasy
+            </div>
         </a>
-        <a href="https://dichtruyendrop.github.io/after-transformation-mine-and-her-wild-fantasy-chap-99.html/" class="story-chap">Chương 99</a>
+
+       <a href="https://dichtruyendrop.github.io/after-transformation-mine-and-her-wild-fantasy-chap-99.html/" class="story-chap">Chương 99</a>
         <div class="story-list">
             
               <a href="https://dichtruyendrop.github.io/after-transformation-mine-and-her-wild-fantasy-chap-98.html/">Chương 98</a>
               <a href="https://dichtruyendrop.github.io/after-transformation-mine-and-her-wild-fantasy-chap-97.html/">Chương 97</a>
               <a href="https://dichtruyendrop.github.io/after-transformation-mine-and-her-wild-fantasy-chap-96.html/">Chương 96</a>
-            
+          
+       
+        </div>
+    </div>
+
+    <!-- TRUYỆN PHẢI -->
+    <div class="story-card">
+        <a href="https://dichtruyendrop.github.io/Change--Jinyuan--Ss2/">
+            <img src="change-jinyuan-ss2-1724790450.jpg">
+            <div class="story-title">
+                Change (Jinyuan) Ss2
+            </div>
+        </a>
+
+        <a class="story-chap" href="https://dichtruyendrop.github.io/change-jinyuan-ss2-chap-62-2.html/">
+            Chương 62.2
+        </a>
+
+        <div class="story-list">
+            <a href="#">Chương 0</a>
+            <a href="#">Chương 0</a>
+            <a href="#">Chương 0</a>
         </div>
     </div>
 
@@ -120,15 +162,3 @@ header h1 {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
